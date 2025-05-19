@@ -11,7 +11,6 @@ WatchlistItem? watchlist;
 int oneTime = 0;
 
 void main() async {
-  // calling of runApp
  WidgetsFlutterBinding.ensureInitialized();
  await Firebase.initializeApp(
    options: DefaultFirebaseOptions.currentPlatform,
@@ -54,7 +53,6 @@ class _MyHomePageState extends State<MyHomePage> {
           return Scaffold(
       body: Stack(
         children: [
-          // Option 2: Setting Image height to full (with aspect ratio)
           Image.asset(
             'assets/DamTrade-logo-banar.png',
             fit: BoxFit.fill,
